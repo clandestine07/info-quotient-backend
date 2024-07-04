@@ -17,6 +17,10 @@ mongoose.connect(`${dbURL}`,)
 
 
 app.use('/api', auth)
+app.get('/hey', (res, req) => {
+    res.send('Hello World')
+
+})
 
 
 app.listen(`${PORT}`, () => {
