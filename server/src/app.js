@@ -17,8 +17,8 @@ mongoose.connect(`${dbURL}`,)
 
 
 app.use('/api', auth)
-app.get('/error', (res, req) => {
-    res.json('error')
+app.get('/', (res, req) => {
+    console.log("hello world")
 
 })
 
